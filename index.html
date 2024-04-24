@@ -523,8 +523,18 @@ function Counter() {
 //  } else  return array.reduce((acc, num) => acc + num, 0)/array.length
 // }
 //Первое столетие охватывает период от 1-го года до 100-го года включительно, второе столетие — от 101-го года до 200-го года включительно и т. д. Задача Учитывая год, вернуть век, в котором он находится.
-function century(year) {
-  return Math.ceil(year/100)
+// function century(year) {
+//   return Math.ceil(year/100)
+// }
+
+//Поздравляем! Но вы амбициозный человек. Вы хотите знать, лучше ли вы, чем средний ученик в вашем классе. Вы получаете массив с результатами тестов ваших сверстников. Теперь подсчитайте среднее значение и сравните свой результат! Верните true, если вам лучше, иначе — false! Примечание: Ваши баллы не включены в массив баллов вашего класса. Не забывайте о них при подсчете среднего балла!
+function betterThanAverage(classPoints, yourPoints) {
+ let averagePoint = classPoints.reduce((acc, num) => acc + num, yourPoints)/(classPoints.length+1)
+ if (yourPoints > averagePoint)
+ return true
+ else return false
 }
+
+
  </script> 
  </html>

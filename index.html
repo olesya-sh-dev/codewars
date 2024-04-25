@@ -527,14 +527,16 @@ function Counter() {
 //   return Math.ceil(year/100)
 // }
 
-//Поздравляем! Но вы амбициозный человек. Вы хотите знать, лучше ли вы, чем средний ученик в вашем классе. Вы получаете массив с результатами тестов ваших сверстников. Теперь подсчитайте среднее значение и сравните свой результат! Верните true, если вам лучше, иначе — false! Примечание: Ваши баллы не включены в массив баллов вашего класса. Не забывайте о них при подсчете среднего балла!
-function betterThanAverage(classPoints, yourPoints) {
- let averagePoint = classPoints.reduce((acc, num) => acc + num, yourPoints)/(classPoints.length+1)
- if (yourPoints > averagePoint)
- return true
- else return false
+// //Поздравляем! Но вы амбициозный человек. Вы хотите знать, лучше ли вы, чем средний ученик в вашем классе. Вы получаете массив с результатами тестов ваших сверстников. Теперь подсчитайте среднее значение и сравните свой результат! Верните true, если вам лучше, иначе — false! Примечание: Ваши баллы не включены в массив баллов вашего класса. Не забывайте о них при подсчете среднего балла!
+// function betterThanAverage(classPoints, yourPoints) {
+//  let averagePoint = classPoints.reduce((acc, num) => acc + num, yourPoints)/(classPoints.length+1)
+//  if (yourPoints > averagePoint)
+//  return true
+//  else return false
+// }
+//Поскольку Натан знает, как важно избегать обезвоживания, он выпивает 0,5 литра воды за час езды на велосипеде. Вам дано время в часах, и вам нужно вернуть количество литров, которое выпьет Натан, округленное до наименьшего значения. 
+function litres(time) {
+  return Math.floor(time*0.5)
 }
-
-
  </script> 
  </html>
